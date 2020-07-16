@@ -1,0 +1,1 @@
+window.onload = rotate;var adImages = new Array("images/show01.jpg","images/show02.jpg","images/show03.jpg","images/show04.jpg","images/show05.jpg");var thisPic = 0;function rotate() {   thisPic++;   if (thisPic == adImages.length) {      thisPic = 0;      }   document.getElementById("adPicture").src = adImages[thisPic];   setTimeout("rotate()", 3 * 1000);   }
