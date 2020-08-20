@@ -24,7 +24,7 @@ body {
   margin: 0;
   width: 100%;
   overflow: hidden;
-  color: #f2f2f2;
+  color: rgba(245, 245, 220, 1);
   top: 0;
   left: 0;
   align-items: center;
@@ -44,6 +44,9 @@ body {
 .header_photo img {
   width: 100%;
   height: auto;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 .container {
@@ -68,8 +71,9 @@ body {
   margin: 0;
 }
 
-.nav-menu a {
+a {
   text-decoration: none;
+  color: black;
 }
 
 /* Style the topnav links */
@@ -82,12 +86,12 @@ body {
   margin-bottom: 3%; */
 }
 
-.nav-menu .nav-bar-button #last {
+/* .nav-menu .nav-bar-button #last {
   margin-bottom: 0%;
 }
 .nav-menu .nav-bar-button #first {
   margin-top: 0%;
-}
+} */
 
 .nav-bar-button {
   background-color: rgba(31, 30, 41, 0.2);
@@ -96,6 +100,10 @@ body {
   /* box-shadow: 0px 2px 5px 1px rgb(63, 63, 63), 0px -2px 5px 1px rgb(63, 63, 63);
   -webkit-box-shadow: 0px 2px 5px 1px rgb(63, 63, 63),
     0px -2px 5px 1px rgb(63, 63, 63); */
+}
+
+#selected_page {
+  background-color: rgba(31, 30, 41, 0.6);
 }
 
 .nav-menu .nav-bar-button h6 {
@@ -128,6 +136,7 @@ h6 {
 
 #main p {
   padding: 5px 5px 5px 5px;
+  font-style: "Dekko";
 }
 
 .box-content {
@@ -135,24 +144,34 @@ h6 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .box {
   width: 37.5%;
   min-width: 350px;
-  height: 400px;
-  max-height: 500px;
+  height: auto;
+  min-height: 400px;
   box-shadow: 0px 0px 5px 5px rgba(39, 39, 39, 0.6);
   -webkit-box-shadow: 0px 0px 5px 5px rgba(39, 39, 39, 0.6);
-  margin: 20px;
-  /* padding: 10px 10px 10px 10px; */
+  margin: 30px;
+  padding-bottom: 20px;
   vertical-align: center;
-  background-color: rgb(189, 142, 142);
+  /* background-color: rgb(189, 142, 142); */
+  /* background-color: rgba(29, 102, 21, 0.712); */
+  background-color: rgba(245, 245, 220, 1);
   font-size: 22px;
+  display: table-cell;
+}
+
+.box a p {
+  color: black;
+  font-weight: normal;
 }
 
 .box_title {
   font-size: xx-large;
+  font-weight: normal;
 }
 
 .box_header_photo {
@@ -162,6 +181,25 @@ h6 {
   width: 100%;
   padding-left: 0px;
   float: left;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+}
+
+.photo_box a {
+  padding: 10px 10px 10px 10px;
+  display: block;
+  margin: auto;
+  color: rgba(245, 245, 220, 1);
+  text-align: center;
+  font-family: "Dekko";
+  font-weight: normal;
+}
+
+.photo_box a img {
+  border: black;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .box_header_photo img {
@@ -169,11 +207,31 @@ h6 {
   height: 200px;
 }
 
+/* .body table a {
+  color: white;
+  text-align: center;
+}
+.body table img {
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+} */
+
+.paragraph-box {
+  color: rgba(245, 245, 220, 1);
+  font-style: "Dekko";
+  font-weight: normal;
+}
+
+.paragraph-box ul {
+  text-align: left;
+}
+
 #footer {
   background-color: rgb(105, 14, 45);
   height: 100px;
   line-height: 150%;
-  color: #f2f2f2;
+  color: rgba(245, 245, 220, 1);
   width: 100%;
   margin: 0 auto;
   margin-top: 5;
@@ -181,6 +239,7 @@ h6 {
   padding-top: 10px;
   padding-bottom: 5px;
   font-size: x-large;
+  font-weight: normal;
 }
 
 h2 {
@@ -188,7 +247,11 @@ h2 {
   padding-top: 20px;
   text-align: center;
   padding-top: 30px;
-  font-size: 70px;
+  font-size: 60px;
+  /* font-family: "Jacques Francois Shadow"; */
+  font-family: "Ribeye Marrow";
+  font-weight: normal;
+  color: rgba(245, 245, 220, 1);
 }
 h3 {
   font-style: italic;
@@ -202,4 +265,9 @@ h4 {
 }
 p {
   margin: 0;
+  font-family: "Dekko";
+}
+
+ul {
+  font-family: "Dekko";
 }
